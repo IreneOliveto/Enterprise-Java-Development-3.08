@@ -1,10 +1,10 @@
 package com.editorial.exercise.eventManagementCompany.model;
 
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
-
-public class Conference extends Event{
+@Entity
+@Inheritance(strategy = InheritanceType.JOINED)
+public class Conference extends Event {
 
     @OneToMany
     @JoinColumn(name="name")

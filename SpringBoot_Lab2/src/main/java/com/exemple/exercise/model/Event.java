@@ -1,10 +1,10 @@
 package com.editorial.exercise.eventManagementCompany.model;
 
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
-
+@Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Event {
     private Date date;
     private double duration;
