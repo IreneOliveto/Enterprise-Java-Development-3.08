@@ -1,4 +1,4 @@
-package com.editorial.exercise.eventManagementCompany.model;
+package com.exemple.exercise.model;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -13,7 +13,7 @@ public class Event {
 
     @OneToMany
     @JoinColumn(name="name")
-    List<Guest> guestsList;
+    private List<Guest> guestsList;
 
     public Date getDate() {
         return date;

@@ -1,6 +1,4 @@
-package com.editorial.exercise.eventManagementCompany.model;
-
-import com.editorial.exercise.associationNurses.model.Status;
+package com.exemple.exercise.model;
 
 public class Guest {
     private String name;
