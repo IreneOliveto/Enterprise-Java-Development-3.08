@@ -7,4 +7,5 @@ public class Association {
     private int associationId;
     private String associationName;
 
+
 }

@@ -1,9 +1,9 @@
 package com.exemple.exercise.model;
 
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.util.Date;
-
+@Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Member {
     private String memberName;
     private Status status;
